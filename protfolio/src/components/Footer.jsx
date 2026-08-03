@@ -21,7 +21,7 @@ const Footer = () => {
         {/* Center */}
         <div className="flex gap-5">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/dhirajkhandare123"
             target="_blank"
             rel="noreferrer"
             className="hover:text-indigo-400 transition"
@@ -30,7 +30,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/dhirajk889"
             target="_blank"
             rel="noreferrer"
             className="hover:text-indigo-400 transition"
@@ -39,7 +39,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="mailto:yourmail@gmail.com"
+            href="mailto:dhirajkhandare2025@gmail.com"
             className="hover:text-indigo-400 transition"
           >
             <EmailIcon fontSize="large" />
