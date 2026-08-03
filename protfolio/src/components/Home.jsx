@@ -35,8 +35,9 @@ const Home = () => {
 
   return (
 
+    <div className='w-full h-full'>
     
-    <div className='h-full w-full flex'>
+    <div className='h-screen w-full flex'>
         <div className='w-1/2 border-r h-full flex flex-col items-center justify-center'>
             <h1 className='text-5xl font-bold leading-26'>Hi, My name is</h1>
             <h1 className='text-5xl font-bold font-serif bg-gradient-to-b from-orange-500 via-white to-green-600 bg-clip-text text-transparent'>
@@ -58,6 +59,10 @@ const Home = () => {
             <h1 className='text-5xl font-bold leading-26 text-white'>I am Open to work</h1>
         </div>
 
+
+    </div>
+
+    <Footer/>
 
     </div>
 
