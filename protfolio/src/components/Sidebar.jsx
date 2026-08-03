@@ -17,7 +17,7 @@ const Sidebar = () => {
     const [expand, setExpand] = useState(false)
 
     return (
-        <aside className={`fixed top-0 left-0 sticky h-screen ${expand ? "w-54" : "w-20"}`}>
+        <aside className={`fixed top-0 left-0 h-screen ${expand ? "w-54" : "w-20"}`}>
             <nav className='h-full flex flex-col border-r bg-gray-800'>
                 <div className={`p-2 pb-4 flex ${expand ? "" : "flex-col"} items-center justify-between`}>
                     <div className='flex flex-col justify-between items-center flex-shrink-0'>
