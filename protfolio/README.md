@@ -20,3 +20,4 @@ If you are developing a production application, we recommend using TypeScript wi
 - Material icons
 - Tailwind css
 - npm install typed.js
+- npm install react-icons
