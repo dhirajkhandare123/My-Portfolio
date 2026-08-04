@@ -56,7 +56,7 @@ const Home = () => {
                 />
             </div>
 
-            <h1 className='text-5xl font-bold leading-26 text-white'>I am Open to work</h1>
+            <h1 className='text-5xl font-bold leading-26 text-red-600'>I am Open to work</h1>
         </div>
 
 
