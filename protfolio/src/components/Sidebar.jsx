@@ -77,56 +77,92 @@ const Sidebar = () => {
                         }
                     >
                         <CodeIcon />
-                        {expand && <span>About</span>}
+                        {expand && <span>Skills</span>}
                     </NavLink>
 
-                    <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-600 cursor-pointer">
+
+
+                    <NavLink
+                        to="/projects"
+                        className={({ isActive }) =>
+                            `flex items-center gap-3 p-3 rounded-lg cursor-pointer ${isActive ? "bg-indigo-600" : "hover:bg-indigo-600"
+                            }`
+                        }
+                    >
                         <LaptopMacIcon />
-                        {
-                            expand && <span>Projects</span>
+                        {expand && <span>Projects</span>}
+                    </NavLink>
+
+                    <NavLink
+                        to="/education"
+                        className={({ isActive }) =>
+                            `flex items-center gap-3 p-3 rounded-lg cursor-pointer ${isActive ? "bg-indigo-600" : "hover:bg-indigo-600"
+                            }`
                         }
+                    >
 
-                    </li>
-
-                    <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-600 cursor-pointer">
                         <SchoolIcon />
-                        {
-                            expand && <span>Education</span>
+                        {expand && <span>Education</span>}
+                    </NavLink>
+
+
+                    <NavLink
+                        to="/internship"
+                        className={({ isActive }) =>
+                            `flex items-center gap-3 p-3 rounded-lg cursor-pointer ${isActive ? "bg-indigo-600" : "hover:bg-indigo-600"
+                            }`
                         }
+                    >
 
-                    </li>
-
-                    <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-600 cursor-pointer">
                         <WorkIcon />
-                        {
-                            expand && <span>Internship</span>
+                        {expand && <span>Internship</span>}
+                    </NavLink>
+
+                    
+                    
+
+
+
+
+                    <NavLink
+                    to="/coursework"
+                    className={({ isActive }) =>
+                            `flex items-center gap-3 p-3 rounded-lg cursor-pointer ${isActive ? "bg-indigo-600" : "hover:bg-indigo-600"
+                            }`
+                        }>
+                            <MenuBookIcon />
+                        {expand && <span>Course Work</span>}
+                    </NavLink>
+
+                    <NavLink
+                    to="/certifications"
+                    className={({ isActive }) =>
+                            `flex items-center gap-3 p-3 rounded-lg cursor-pointer ${isActive ? "bg-indigo-600" : "hover:bg-indigo-600"
+                            }`
                         }
-
-                    </li>
-
-                    <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-600 cursor-pointer">
-                        <MenuBookIcon />
-                        {
-                            expand && <span>Course Work</span>
-                        }
-
-                    </li>
-
-                    <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-600 cursor-pointer">
+                    >
                         <WorkspacePremiumIcon />
                         {
                             expand && <span>Certifications</span>
                         }
+                    </NavLink>
 
-                    </li>
+                    
 
-                    <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-600 cursor-pointer">
+                    <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                            `flex items-center gap-3 p-3 rounded-lg cursor-pointer ${isActive ? "bg-indigo-600" : "hover:bg-indigo-600"
+                            }`
+                        }
+                    >
                         <ContactMailIcon />
                         {
                             expand && <span>Contact</span>
                         }
+                    </NavLink>
 
-                    </li>
+                    
 
                 </ul>
 
