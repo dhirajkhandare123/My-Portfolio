@@ -42,11 +42,11 @@ const Home = () => {
                 {/* Left Section */}
                 <div className='w-full md:w-1/2 md:border-r h-auto md:h-screen flex flex-col items-center justify-center text-center px-5 py-10'>
 
-                    <h1 className='text-3xl md:text-5xl font-bold md:leading-26'>
+                    <h1 className='animate-bounce text-3xl md:text-5xl font-bold md:leading-26'>
                         Hi, My name is
                     </h1>
 
-                    <h1 className='text-4xl md:text-5xl font-bold font-serif bg-gradient-to-b from-orange-500 via-white to-green-600 bg-clip-text text-transparent'>
+                    <h1 className='animate-bounce text-4xl md:text-5xl font-bold font-serif bg-gradient-to-b from-orange-500 via-white to-green-600 bg-clip-text text-transparent'>
                         Dhiraj Khandare
                     </h1>
 
