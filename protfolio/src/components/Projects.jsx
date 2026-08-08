@@ -84,7 +84,7 @@ const Projects = () => {
 
         <ProjectCard
 
-          image="https://your-cloudinary-url/ecommerce.png"
+          image="https://raw.githubusercontent.com/dhirajkhandare123/Images_for_projects/refs/heads/main/ecommerce.png"
 
           title="E-Commerce Application"
 
@@ -105,12 +105,12 @@ const Projects = () => {
 
         <ProjectCard
 
-          image="https://your-cloudinary-url/chat-app.png"
+          image="https://raw.githubusercontent.com/dhirajkhandare123/Images_for_projects/refs/heads/main/console_based.jpg"
 
-          title="Chat Application"
+          title="Hotel Reservation System"
 
           description="
-          Real time chat application developed using
+           Developed a Java-based desktop application with a menu-driven interface for managing hotel bookings and guest details.
           React.js, Spring Boot and WebSocket.
           "
 
