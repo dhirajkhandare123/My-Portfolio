@@ -24,6 +24,7 @@ import Footer from './Footer'
 
 const Education = () => {
   const educationData = [
+    
     {
       degree: "Bachelor of Computer Engineering (B.E)",
       institution: "Savitribai Phule Pune University",
@@ -46,7 +47,7 @@ const Education = () => {
 
   return (
     <section className="h-full text-white">
-      <div className="pt-10 min-h-screen flex flex-col items-center">
+      <div className="pt-10 min-h-screen flex flex-col items-center pb-6">
         <h1 className="text-4xl font-bold text-center mb-10 underline decoration-blue-400">
           Education
         </h1>
