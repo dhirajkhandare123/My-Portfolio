@@ -2,38 +2,45 @@ import React, { useState } from "react";
 import Footer from "./Footer";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    message: "",
-  });
+  const [result, setResult] = useState("");
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(formData);
+    const formData = new FormData(e.target);
 
-    // API call can be added here
+    formData.append(
+      "access_key",
+      "5757e514-c3be-476a-8449-e719956ced8d"
+    );
 
-    alert("Message Sent Successfully!");
+    setResult("Sending...");
 
-    setFormData({
-      fullName: "",
-      email: "",
-      message: "",
-    });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Message sent successfully!");
+
+        e.target.reset();
+      } else {
+        setResult("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      setResult("Failed to send message. Please try again.");
+    }
   };
 
   return (
     <section className="min-h-screen flex flex-col justify-between">
       <div className="max-w-3xl mx-auto w-full px-6 py-10">
+
         <h1 className="text-4xl font-bold text-center text-white underline mb-10">
           Contact
         </h1>
@@ -50,10 +57,8 @@ const Contact = () => {
 
             <input
               type="text"
-              name="fullName"
+              name="name"
               placeholder="Enter your name"
-              value={formData.fullName}
-              onChange={handleChange}
               required
               className="w-full rounded-lg border border-gray-300 p-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -69,8 +74,6 @@ const Contact = () => {
               type="email"
               name="email"
               placeholder="Enter your email"
-              value={formData.email}
-              onChange={handleChange}
               required
               className="w-full rounded-lg border border-gray-300 p-3 bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -86,8 +89,6 @@ const Contact = () => {
               name="message"
               rows="6"
               placeholder="Write your message..."
-              value={formData.message}
-              onChange={handleChange}
               required
               className="w-full rounded-lg border border-gray-300 p-3 bg-white text-black resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
             ></textarea>
@@ -100,6 +101,13 @@ const Contact = () => {
           >
             Send Message
           </button>
+
+          {/* Result Message */}
+          {result && (
+            <p className="text-center text-white font-medium">
+              {result}
+            </p>
+          )}
         </form>
       </div>
 
