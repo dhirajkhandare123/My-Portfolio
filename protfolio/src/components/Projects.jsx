@@ -143,24 +143,7 @@ const Projects = () => {
 
 
 
-        {/* Project 6 */}
 
-        <ProjectCard
-
-          image="https://your-cloudinary-url/blog.png"
-
-          title="Blog Application"
-
-          description="
-          Full stack blog application with user authentication,
-          CRUD operations and database integration.
-          "
-
-          github="https://github.com/yourusername/blog"
-
-          visit="https://your-blog.com"
-
-        />
 
 
       </div>
