@@ -75,6 +75,17 @@ const Home = () => {
                         I am Open to work
                     </h1>
 
+                    {/* Download Resume Button */}
+    <a
+        href="https://drive.google.com/file/d/1U_MgdlAlMa7OmMwDchwhvtCPiDw06dQW/view?usp=sharing"
+        download="Dhiraj_Khandare_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className='mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300'
+    >
+        Download Resume
+    </a>
+
                 </div>
 
             </div>
