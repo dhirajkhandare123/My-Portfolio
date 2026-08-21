@@ -7,44 +7,46 @@ import {
     Button,
     CardActionArea,
 } from "@mui/material";
+import Footer from "./Footer";
 
 const courses = [
     {
-        title: "React.js for Beginners",
+        title: "Java Full Stack",
+        platform: "Firstbit Solutions, Pune",
+        duration: "7 months",
+        certificate: "https://drive.google.com/file/d/1xkIlnZWkvkIHDU32S_LnU6-ywpUZhALP/view?usp=sharing",
+        description:
+            "Completed training in Java, Spring Boot, REST APIs, MySQL, React.js, HTML, CSS, and JavaScript with hands-on full-stack application development.",
+    },
+    {
+        title: "Data Science",
+        platform: "Code With Harry",
+        duration: "5 months",
+        certificate: "https://drive.google.com/file/d/12_aDQ0cBDvZLH0n34jg5ZdQv28Jp3MDq/view?usp=sharing",
+        description:
+            "Gained knowledge of Python, data analysis, data visualization, and fundamental concepts of data science.",
+    },
+    {
+        title: "Prompt Engineering",
+        platform: "ZCOER, Pune",
+        duration: "2 days",
+        certificate: "https://drive.google.com/file/d/1YuNTPlXrfkeJgwnvi40_U_lkiul_z0S5/view?usp=sharing",
+        description:
+            "Learned the fundamentals of prompt design, effective AI interactions, prompt optimization, and techniques for generating accurate and relevant outputs.",
+    },
+    {
+        title: "100 Days of Python",
         platform: "Udemy",
-        duration: "6 weeks",
-        certificate: "#",
+        duration: "100 days",
+        certificate: "https://drive.google.com/file/d/1Pnhm5cTnpmECtQGBg9tGLjd8ztKsEIF1/view?usp=sharing",
         description:
-            "Learned fundamentals of React including hooks, state, and props.",
-    },
-    {
-        title: "Spring Boot & JPA",
-        platform: "Coursera",
-        duration: "8 weeks",
-        certificate: "#",
-        description:
-            "Built REST APIs with Spring Boot and integrated JPA for persistence.",
-    },
-    {
-        title: "Database Design",
-        platform: "edX",
-        duration: "4 weeks",
-        certificate: "#",
-        description:
-            "Covered SQL, schema design, and optimization techniques.",
-    },
-    {
-        title: "Advanced Java",
-        platform: "Udemy",
-        duration: "5 weeks",
-        certificate: "#",
-        description:
-            "Deep dive into Java OOP, multithreading, and performance tuning.",
+            "Gained foundational knowledge of Python programming, including variables, data types, control flow, functions, collections, and basic problem-solving.",
     },
 ];
 
 const CourseWork = () => {
     return (
+        <>
         <section
             style={{
                 minHeight: "100vh",
@@ -162,7 +164,12 @@ const CourseWork = () => {
                     </Grid>
                 ))}
             </Grid>
+            
         </section>
+        <div>
+<Footer/>
+        </div>
+        </>
     );
 };
 
