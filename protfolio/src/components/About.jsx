@@ -59,6 +59,9 @@ const About = () => {
             <div className="flex justify-center mt-6 animate-pulse">
               <Button
                 variant="contained"
+                href="https://drive.google.com/file/d/1U_MgdlAlMa7OmMwDchwhvtCPiDw06dQW/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                   backgroundColor: "#4f46e5",
                   "&:hover": { backgroundColor: "#4338ca" },
