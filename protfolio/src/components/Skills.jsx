@@ -29,6 +29,7 @@ import Footer from './Footer';
 
 const Skills = () => {
     return (
+        <>
         <section className="min-h-screen text-white pt-5 px-3 sm:px-5 md:px-0">
             <h1 className="font-extrabold text-white text-5xl animate-bounce sm:text-3xl md:text-4xl text-center mb-6 md:mb-10">
                 My Skills
@@ -171,10 +172,12 @@ const Skills = () => {
 
             </div>
 
-            <div className="mt-20 w-full">
+            
+        </section>
+        <div className="mt-20 w-full">
                 <Footer />
             </div>
-        </section>
+            </>
     )
 }
 
