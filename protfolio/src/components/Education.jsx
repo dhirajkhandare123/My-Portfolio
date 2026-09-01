@@ -39,7 +39,7 @@ const Education = () => {
     },
     {
       degree: "Secondary School (10th Grade)",
-      institution: "DEF High School",
+      institution: "Sahakar Vidya Mandir, Dhamangaon Badhe",
       year: "2016 - 2018",
       description: "Completed foundational education with strong interest in science and technology."
     }

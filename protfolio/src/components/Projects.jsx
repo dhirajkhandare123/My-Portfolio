@@ -38,6 +38,22 @@ const Projects = () => {
 
 
 
+      <ProjectCard
+
+          image="https://raw.githubusercontent.com/dhirajkhandare123/Images_for_projects/refs/heads/main/Pharma.png"
+
+          title="Pharma Billing Software"
+
+          description="
+          Streamlined pharmacy platform managing inventory, billing, and expiry tracking.
+          "
+
+          github="https://github.com/dhirajkhandare123/Pharmacy-Billing-Software"
+
+          visit="https://github.com/dhirajkhandare123/Pharmacy-Billing-Software"
+
+        />
+
         {/* Project 1 */}
 
         <ProjectCard
@@ -51,9 +67,9 @@ const Projects = () => {
           Spring Boot, React.js, JPA and MySQL.
           "
 
-          github="https://github.com/yourusername/library-management"
+          github="https://github.com/dhirajkhandare123/Library-Management"
 
-          visit="https://your-library-project.com"
+          visit="https://github.com/dhirajkhandare123/Library-Management"
 
         />
 
@@ -72,9 +88,9 @@ const Projects = () => {
           using React.js and Tailwind CSS.
           "
 
-          github="https://github.com/yourusername/portfolio"
+          github="https://github.com/dhirajkhandare123/My-Portfolio"
 
-          visit="https://yourportfolio.com"
+          visit="https://github.com/dhirajkhandare123/My-Portfolio"
 
         />
 
@@ -93,9 +109,9 @@ const Projects = () => {
           products, cart and payment features.
           "
 
-          github="https://github.com/yourusername/ecommerce"
+          github="https://github.com/dhirajkhandare123/Ecommerce_Website_Using_Java_Servlet_And_React_JS"
 
-          visit="https://your-ecommerce.com"
+          visit="https://github.com/dhirajkhandare123/Ecommerce_Website_Using_Java_Servlet_And_React_JS"
 
         />
 
@@ -114,9 +130,9 @@ const Projects = () => {
           React.js, Spring Boot and WebSocket.
           "
 
-          github="https://github.com/yourusername/chat-app"
+          github=""
 
-          visit="https://your-chat-app.com"
+          visit=""
 
         />
 
@@ -135,9 +151,9 @@ const Projects = () => {
           using HTML,CSS, Django
           "
 
-          github="https://github.com/yourusername/task-manager"
+          github="https://github.com/dhirajkhandare123/Travels_ticket_booking_website_using_django"
 
-          visit="https://your-task-manager.com"
+          visit="https://github.com/dhirajkhandare123/Travels_ticket_booking_website_using_django"
 
         />
 

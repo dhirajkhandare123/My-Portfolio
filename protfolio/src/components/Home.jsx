@@ -16,8 +16,6 @@ const Home = () => {
                 "Frontend Developer",
                 "Backend Developer",
                 "React JS Developer",
-                "Data Analyst",
-                "Data Scientist",
                 "JavaScript Developer",
                 "Computer Engineer"
             ],
